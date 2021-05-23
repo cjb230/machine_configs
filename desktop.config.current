@@ -1,0 +1,16 @@
+# spotify
+sudo snap install spotify
+
+
+# Obs  ... during repo add, there are complaints "repository ... does not have a Release file.", and "Updating ... is ... disabled by default". No actual problem.
+sudo apt install ffmpeg
+sudo add-apt-repository ppa:obsproject/obs-studio
+sudo apt install obs-studio
+
+
+# zoom ... errors reported during dpkg command (penultimate), but no actual problems
+cd
+wget -O Downloads/zoom.deb https://zoom.us/client/latest/zoom_amd64.deb
+cd Downloads/
+sudo dpkg -i zoom.deb
+sudo apt-get -f install
